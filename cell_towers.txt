@@ -1,0 +1,40 @@
+1. SELECT company, city FROM cell_towers; 
+2. SELECT address, addressType FROM cell_towers;
+3. SELECT company, COUNT(company) FROM cell_towers GROUP BY company;
+4. SELECT COUNT(DISTINCT city) AS Total_City FROM cell_towers; 
+5. SELECT addressType FROM cell_towers; 
+6. SELECT BroadcastTechnology FROM cell_towers; 
+7. SELECT RadiationPermit FROM cell_towers; 
+8. SELECT Localauthority FROM cell_towers; 
+9. SELECT company, ID FROM cell_towers;
+10. SELECT company, ID FROM cell_towers;
+11. clear
+12. SELECT * FROM cell_towers;
+13. clear
+14. clear
+15. clear
+16. clear
+17. clear
+18. SELECT TheoreticalMaximumPowerInµWPerNail FROM cell_towers ORDER BY TheoreticalMaximumPowerInµWPerNail DESC; 
+19. clear
+20. SELECT city FROM cell_towers ORDER BY city DESC; 
+21. SELECT address FROM cell_towers WHERE city LIKE "%תל אביב%"; 
+22. SELECT address FROM cell_towers WHERE company LIKE "%פלאפון%"; 
+23. SELECT address FROM cell_towers WHERE addressType LIKE "%תורן קרקעי%"; 
+24. SELECT address FROM cell_towers WHERE RadiationPermit LIKE "%יש היתר%"; 
+25. SELECT address FROM cell_towers WHERE RadiationPermit LIKE "%אין היתר%";
+26. SELECT address FROM cell_towers WHERE BroadcastTechnology LIKE "%5%"; 
+27. SELECT address FROM cell_towers WHERE city LIKE "%תל%"; 
+28. SELECT address FROM cell_towers WHERE TheoreticalMaximumPowerInµWPerNail > 50; 
+29. SELECT address FROM cell_towers WHERE TheoreticalMaximumPowerInµWPerNail < 5;
+30. SELECT * FROM `cell_towers` WHERE `MaximumResultIn%RelativeToHealthThreshold` > 10; 
+31. SELECT * FROM `cell_towers` WHERE `MaximumResultIn%RelativeToHealthThreshold` = 0;
+32. SELECT address FROM cell_towers WHERE company LIKE "%פרטנר%" AND city like "%תל אביב%"; 
+33. SELECT address FROM cell_towers WHERE addressType NOT LIKE "תורן קרקעי"; 
+34. SELECT address FROM cell_towers WHERE OperatingPermitDate > "2020-01-01"; 
+35. SELECT address FROM cell_towers WHERE Localauthority LIKE 'ירושלים'; 
+36. SELECT address FROM cell_towers WHERE address LIKE '%רחוב%'; 
+37. SELECT address FROM cell_towers WHERE BroadcastTechnology LIKE "%3%4%"; 
+38. SELECT address FROM cell_towers WHERE company NOT LIKE "%סלקום%"; 
+39. SELECT address FROM cell_towers WHERE city IS NOT NULL; 
+40. SELECT address FROM cell_towers WHERE DescriptionOfAPointWhereAMaximumResultWasObtained LIKE "%קרקע%"; 
